@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.krein{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 120px;
+    background: black;
+}
+img{
+    z-index: -1;
+}
+span{
+    transform: translateX(600px);
+}
+.krein:hover span{
+    transform: scale(0);
+}
+.krein:hover img{
+    z-index: 1;
+}
+@media (max-width: 500px){
+    img{
+        max-width: 400px;
+        margin-right: 180px;
+    }
+    span{
+        transform: translateX(300px);
+        font-size: 70px;
+    }
+}
+@media (max-width: 411px){
+    img{
+        max-width: 350px;
+        margin-right: 180px;
+    }
+    span{
+        transform: translateX(300px);
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 320px) {
+    img{
+        max-width: 300px;
+        margin-right: 140px;
+    }
+    span{
+        transform: translateX(300px);
+        font-size: 50px;
+    }
+}
